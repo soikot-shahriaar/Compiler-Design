@@ -1,0 +1,20 @@
+# Lab Task Instructions
+
+## Task 1: Flex Lexical Analyzer
+# Compile and run Task 1 (Flex only)
+
+flex task1.l
+gcc lex.yy.c -o task1
+task1.exe
+
+
+## Task 2: Flex + Bison Parser
+# Compile and run Task 2 (Flex + Bison)
+
+flex task2.l
+bison -d task2.y
+gcc lex.yy.c task2.tab.c -o task2
+task2.exe
+
+
+# Note: Make sure you have Flex and Bison installed on your system

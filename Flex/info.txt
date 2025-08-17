@@ -1,0 +1,25 @@
+# Flex Programs - Compilation and Execution Commands
+
+## lex1.l - Token Identifier (No counting)
+flex lex1.l
+gcc lex.yy.c -o lex1
+lex1.exe
+
+## lex2.l - Token Identifier and Counter  
+flex lex2.l
+gcc lex.yy.c -o lex2
+lex2.exe
+
+## lex3.l - Token Identifier and Counter (reads input.c)
+flex lex3.l
+gcc lex.yy.c -o lex3
+lex3.exe
+
+## lex4.l - C Language Token Analyzer (reads input.c)
+flex lex4.l
+gcc lex.yy.c -o lex4
+lex4.exe
+
+## Note: 
+- lex1.l and lex2.l: Read from standard input (keyboard)
+- lex3.l and lex4.l: Read from input.c file (make sure it exists)
