@@ -1,0 +1,19 @@
+/* Compilation Commands for All 5 Task Programs */
+
+/* Task 1: Number Recognition */
+flex task1.l
+bison -d task1.y
+gcc lex.yy.c task1.tab.c -o task1
+task1.exe
+
+/* Task 2: Arithmetic Expressions */
+flex task2.l
+bison -d task2.y
+gcc lex.yy.c task2.tab.c -o task2
+task2.exe
+
+/* Task 3: C-like Language Tokens */
+flex task3.l
+bison -d task3.y
+gcc lex.yy.c task3.tab.c -o task3
+task3.exe
